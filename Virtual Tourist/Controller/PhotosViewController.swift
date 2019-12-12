@@ -150,7 +150,7 @@ extension PhotosViewController: UICollectionViewDelegate, UICollectionViewDataSo
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
         let photo = self.fRC.object(at: indexPath)
-        cell.getPhoto(photo: photo)
+        cell.setPhoto(photo: photo)
         return cell
     }
     

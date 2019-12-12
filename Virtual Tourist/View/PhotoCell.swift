@@ -38,7 +38,7 @@ class PhotoCell: UICollectionViewCell {
         }
     }
     
-    func getPhoto(photo: Photo) {
+    func setPhoto(photo: Photo) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
         if let photoData = photo.data {
