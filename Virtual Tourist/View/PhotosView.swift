@@ -14,7 +14,7 @@ class PhotosView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        layer.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        layer.backgroundColor = UIColor.systemBackground.cgColor
         layer.cornerRadius = 20
     
     }

@@ -110,14 +110,15 @@ class MapViewController: UIViewController, UIGestureRecognizerDelegate {
             UIView.animate(withDuration: 0.3) {
                 self.deleteButton.tintColor = .systemRed
                 self.deleteButton.layer.shadowRadius = 2
-                self.deleteButton.layer.shadowOffset = CGSize(width: 0, height: 2)
+                self.deleteButton.layer.shadowOffset = CGSize(width: 0, height: 0)
             }
         } else {
             UIView.animate(withDuration: 0.3) {
-                self.deleteButton.layer.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                self.deleteButton.layer.backgroundColor = UIColor.systemBackground.cgColor
                 self.deleteButton.layer.cornerRadius = 20
                 self.deleteButton.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-                self.deleteButton.tintColor = .black
+                self.deleteButton.tintColor = UIColor.label
+                self.deleteButton.layer.shadowColor = UIColor.label.cgColor
                 self.deleteButton.layer.shadowRadius = 5
                 self.deleteButton.layer.shadowOpacity = 0.2
                 self.deleteButton.layer.shadowOffset = CGSize(width: 0, height: 3)
